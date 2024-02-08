@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.topper {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: left;
+    padding-left: 6vw;
+}
+
+.logo {
+    width: 15vw;
+}
+
+.foot {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10vw;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagen {
+    padding-left: 3vw;
+    margin-right: 1vw;
+}
+
+.letra {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding-right: 10vw;
+    margin-left: 1vw;
+}
+
+.illustration {
+    width: 45vw;
+}
+
+h1 {
+    font-family: 'Poppins';
+}
+
+.boton {
+    border-radius: 28px;
+    width: 11vw;
+    height: 7vh;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    font-family: 'Poppins';
+    font-size: medium;
+    box-shadow: 2px 2px 10px black;
+}
+
+.boton:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 69%, 71%);
+}
+
+.rrss {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(257, 40%, 49%);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    border-color: hsl(0, 0%, 100%);
+    border: solid;
+    margin: 10px;
+}
+
+.rrss:hover {
+    color: hsl(300, 69%, 71%);
+    background-color: hsl(257, 40%, 49%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 376px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        text-align: center;
+    }
+    .container {
+        width: 375px;
+        height: 800px;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+    .letra {
+        width: 275px;
+        margin: 75px auto;
+    }
+    .topper {
+        height: 100px;
+    }
+    .logo {
+        width: 120px;
+    }
+    .foot {
+        justify-content: center;
+    }
+    .rrss {
+        width: 30px;
+        height: 30px;
+    }
+    .boton {
+        width: 190px;
+        align-self: center;
+    }
+    .illustration {
+        width: 290px;
+    }
+    .entrar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size:x-large;
+    }
+    p {
+        font-size: medium;
+    }
+
+}
